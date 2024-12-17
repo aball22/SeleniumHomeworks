@@ -28,7 +28,7 @@ public class FireFoxBrowserAssignment {
 
         String url = driver.getCurrentUrl();
         System.out.println(url);
-        
+
         String title = driver.getTitle();
         System.out.println(title);
 
