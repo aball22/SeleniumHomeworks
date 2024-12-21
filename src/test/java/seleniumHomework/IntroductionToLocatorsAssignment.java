@@ -31,13 +31,14 @@ Acceptance Criteria
         fullName.sendKeys("Stan Smith");
 
         WebElement email = driver.findElement(By.name("yourEmail"));
-        email.sendKeys("stan_smith@selenium.com");
+        email.sendKeys("stan_smithselenium.com");
 
         String emailValue = email.getAttribute("value");
         if (!emailValue.contains("@")) {
             System.out.println("Error: Email must include '@'");
             driver.quit();
-            return;}
+            return;
+            }
 
         WebElement clientName = driver.findElement(By.id("clientNameId"));
         clientName.sendKeys("Jesse James");
